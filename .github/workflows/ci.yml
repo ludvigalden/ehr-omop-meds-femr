@@ -1,0 +1,56 @@
+name: CI
+
+# All actions are pinned by full commit SHA (resolved from the release
+# tags, not mutable branch refs).
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+      - run: uv sync --frozen --extra dev
+      - name: ruff check
+        run: uv run ruff check
+      - name: ruff format --check
+        run: uv run ruff format --check
+
+  typecheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+      # The ML extras put the real packages in front of the type checker;
+      # torch resolves to the CPU-only build on Linux (see pyproject.toml).
+      - run: uv sync --frozen --extra dev --extra embed --extra hf
+      - name: basedpyright
+        run: uv run basedpyright
+
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      # Hermetic: tiny local models and a fake encoder stand in for real
+      # ones, so nothing may reach out to a model hub even by accident.
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+      - run: uv sync --frozen --extra dev --extra embed --extra hf
+      # real_model tests need a local CLMBR checkpoint and stay out of CI.
+      - run: uv run pytest -m "not real_model"
