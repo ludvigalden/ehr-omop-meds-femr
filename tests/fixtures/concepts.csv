@@ -1,0 +1,201 @@
+concept_id	concept_name	domain_id	vocabulary_id	concept_class_id	standard_concept	concept_code	valid_start_date	valid_end_date	invalid_reason
+1	demo disorder alpha	Condition	DEMOCOND	demo disorder	S	DC-ALPH-01	2020-01-01	2099-12-31	
+2	demo medication alpha	Drug	DEMODRUG	demo drug product	S	DD-ALPH-01	2020-01-01	2099-12-31	
+3	demo procedure alpha	Procedure	DEMOPROC	demo procedure	S	DP-ALPH-01	2020-01-01	2099-12-31	
+4	demo lab test alpha	Measurement	DEMOLAB	demo lab test	S	DL-ALPH-01	2020-01-01	2023-12-31	D
+5	demo finding alpha	Observation	DEMOVOCAB	demo finding	S	DO-ALPH-01	2020-01-01	2099-12-31	
+6	demo disorder beta	Condition	DEMOCOND	demo disorder	S	DC-BETA-01	2020-01-01	2099-12-31	
+7	demo medication beta	Drug	DEMODRUG	demo drug product	S	DD-BETA-01	2020-01-01	2099-12-31	
+8	demo procedure beta	Procedure	DEMOPROC	demo procedure	S	DP-BETA-01	2020-01-01	2099-12-31	
+9	demo lab test beta	Measurement	DEMOLAB	demo lab test	S	DL-BETA-01	2020-01-01	2099-12-31	
+10	demo finding beta	Observation	DEMOVOCAB	demo finding	S	DO-BETA-01	2020-01-01	2099-12-31	
+11	demo disorder gamma	Condition	DEMOCOND	demo disorder	S	DC-GAMM-01	2020-01-01	2023-12-31	D
+12	demo medication gamma	Drug	DEMODRUG	demo drug product	S	DD-GAMM-01	2020-01-01	2099-12-31	
+13	demo procedure gamma	Procedure	DEMOPROC	demo procedure	S	DP-GAMM-01	2020-01-01	2099-12-31	
+14	demo lab test gamma	Measurement	DEMOLAB	demo lab test	S	DL-GAMM-01	2020-01-01	2099-12-31	
+15	demo finding gamma	Observation	DEMOVOCAB	demo finding	S	DO-GAMM-01	2020-01-01	2099-12-31	
+16	demo disorder delta	Condition	DEMOCOND	demo disorder	S	DC-DELT-01	2020-01-01	2099-12-31	
+17	demo medication delta	Drug	DEMODRUG	demo drug product	S	DD-DELT-01	2020-01-01	2099-12-31	
+18	demo procedure delta	Procedure	DEMOPROC	demo procedure	S	DP-DELT-01	2020-01-01	2023-12-31	D
+19	demo lab test delta	Measurement	DEMOLAB	demo lab test	S	DL-DELT-01	2020-01-01	2099-12-31	
+20	demo finding delta	Observation	DEMOVOCAB	demo finding	S	DO-DELT-01	2020-01-01	2099-12-31	
+21	demo disorder epsilon	Condition	DEMOCOND	demo disorder	S	DC-EPSI-01	2020-01-01	2099-12-31	
+22	demo medication epsilon	Drug	DEMODRUG	demo drug product	S	DD-EPSI-01	2020-01-01	2099-12-31	
+23	demo procedure epsilon	Procedure	DEMOPROC	demo procedure	S	DP-EPSI-01	2020-01-01	2099-12-31	
+24	demo lab test epsilon	Measurement	DEMOLAB	demo lab test	S	DL-EPSI-01	2020-01-01	2099-12-31	
+25	demo finding epsilon	Observation	DEMOVOCAB	demo finding	S	DO-EPSI-01	2020-01-01	2023-12-31	D
+26	demo disorder zeta	Condition	DEMOCOND	demo disorder	S	DC-ZETA-01	2020-01-01	2099-12-31	
+27	demo medication zeta	Drug	DEMODRUG	demo drug product	S	DD-ZETA-01	2020-01-01	2099-12-31	
+28	demo procedure zeta	Procedure	DEMOPROC	demo procedure	S	DP-ZETA-01	2020-01-01	2099-12-31	
+29	demo lab test zeta	Measurement	DEMOLAB	demo lab test	S	DL-ZETA-01	2020-01-01	2099-12-31	
+30	demo finding zeta	Observation	DEMOVOCAB	demo finding	S	DO-ZETA-01	2020-01-01	2099-12-31	
+31	demo disorder eta	Condition	DEMOCOND	demo disorder	S	DC-ETA-01	2020-01-01	2099-12-31	
+32	demo medication eta	Drug	DEMODRUG	demo drug product	S	DD-ETA-01	2020-01-01	2023-12-31	D
+33	demo procedure eta	Procedure	DEMOPROC	demo procedure	S	DP-ETA-01	2020-01-01	2099-12-31	
+34	demo lab test eta	Measurement	DEMOLAB	demo lab test	S	DL-ETA-01	2020-01-01	2099-12-31	
+35	demo finding eta	Observation	DEMOVOCAB	demo finding	S	DO-ETA-01	2020-01-01	2099-12-31	
+36	demo disorder theta	Condition	DEMOCOND	demo disorder	S	DC-THET-01	2020-01-01	2099-12-31	
+37	demo medication theta	Drug	DEMODRUG	demo drug product	S	DD-THET-01	2020-01-01	2099-12-31	
+38	demo procedure theta	Procedure	DEMOPROC	demo procedure	S	DP-THET-01	2020-01-01	2099-12-31	
+39	demo lab test theta	Measurement	DEMOLAB	demo lab test	S	DL-THET-01	2020-01-01	2023-12-31	D
+40	demo finding theta	Observation	DEMOVOCAB	demo finding	S	DO-THET-01	2020-01-01	2099-12-31	
+41	demo disorder iota	Condition	DEMOCOND	demo disorder	S	DC-IOTA-01	2020-01-01	2099-12-31	
+42	demo medication iota	Drug	DEMODRUG	demo drug product	S	DD-IOTA-01	2020-01-01	2099-12-31	
+43	demo procedure iota	Procedure	DEMOPROC	demo procedure	S	DP-IOTA-01	2020-01-01	2099-12-31	
+44	demo lab test iota	Measurement	DEMOLAB	demo lab test	S	DL-IOTA-01	2020-01-01	2099-12-31	
+45	demo finding iota	Observation	DEMOVOCAB	demo finding	S	DO-IOTA-01	2020-01-01	2099-12-31	
+46	demo disorder kappa	Condition	DEMOCOND	demo disorder	S	DC-KAPP-01	2020-01-01	2023-12-31	D
+47	demo medication kappa	Drug	DEMODRUG	demo drug product	S	DD-KAPP-01	2020-01-01	2099-12-31	
+48	demo procedure kappa	Procedure	DEMOPROC	demo procedure	S	DP-KAPP-01	2020-01-01	2099-12-31	
+49	demo lab test kappa	Measurement	DEMOLAB	demo lab test	S	DL-KAPP-01	2020-01-01	2099-12-31	
+50	demo finding kappa	Observation	DEMOVOCAB	demo finding	S	DO-KAPP-01	2020-01-01	2099-12-31	
+51	demo disorder lambda	Condition	DEMOCOND	demo disorder	S	DC-LAMB-01	2020-01-01	2099-12-31	
+52	demo medication lambda	Drug	DEMODRUG	demo drug product	S	DD-LAMB-01	2020-01-01	2099-12-31	
+53	demo procedure lambda	Procedure	DEMOPROC	demo procedure	S	DP-LAMB-01	2020-01-01	2023-12-31	D
+54	demo lab test lambda	Measurement	DEMOLAB	demo lab test	S	DL-LAMB-01	2020-01-01	2099-12-31	
+55	demo finding lambda	Observation	DEMOVOCAB	demo finding	S	DO-LAMB-01	2020-01-01	2099-12-31	
+56	demo disorder mu	Condition	DEMOCOND	demo disorder	S	DC-MU-01	2020-01-01	2099-12-31	
+57	demo medication mu	Drug	DEMODRUG	demo drug product	S	DD-MU-01	2020-01-01	2099-12-31	
+58	demo procedure mu	Procedure	DEMOPROC	demo procedure	S	DP-MU-01	2020-01-01	2099-12-31	
+59	demo lab test mu	Measurement	DEMOLAB	demo lab test	S	DL-MU-01	2020-01-01	2099-12-31	
+60	demo finding mu	Observation	DEMOVOCAB	demo finding	S	DO-MU-01	2020-01-01	2023-12-31	D
+61	demo disorder nu	Condition	DEMOCOND	demo disorder	S	DC-NU-01	2020-01-01	2099-12-31	
+62	demo medication nu	Drug	DEMODRUG	demo drug product	S	DD-NU-01	2020-01-01	2099-12-31	
+63	demo procedure nu	Procedure	DEMOPROC	demo procedure	S	DP-NU-01	2020-01-01	2099-12-31	
+64	demo lab test nu	Measurement	DEMOLAB	demo lab test	S	DL-NU-01	2020-01-01	2099-12-31	
+65	demo finding nu	Observation	DEMOVOCAB	demo finding	S	DO-NU-01	2020-01-01	2099-12-31	
+66	demo disorder xi	Condition	DEMOCOND	demo disorder	S	DC-XI-01	2020-01-01	2099-12-31	
+67	demo medication xi	Drug	DEMODRUG	demo drug product	S	DD-XI-01	2020-01-01	2023-12-31	D
+68	demo procedure xi	Procedure	DEMOPROC	demo procedure	S	DP-XI-01	2020-01-01	2099-12-31	
+69	demo lab test xi	Measurement	DEMOLAB	demo lab test	S	DL-XI-01	2020-01-01	2099-12-31	
+70	demo finding xi	Observation	DEMOVOCAB	demo finding	S	DO-XI-01	2020-01-01	2099-12-31	
+71	demo disorder omicron	Condition	DEMOCOND	demo disorder	S	DC-OMIC-01	2020-01-01	2099-12-31	
+72	demo medication omicron	Drug	DEMODRUG	demo drug product	S	DD-OMIC-01	2020-01-01	2099-12-31	
+73	demo procedure omicron	Procedure	DEMOPROC	demo procedure	S	DP-OMIC-01	2020-01-01	2099-12-31	
+74	demo lab test omicron	Measurement	DEMOLAB	demo lab test	S	DL-OMIC-01	2020-01-01	2023-12-31	D
+75	demo finding omicron	Observation	DEMOVOCAB	demo finding	S	DO-OMIC-01	2020-01-01	2099-12-31	
+76	demo disorder pi	Condition	DEMOCOND	demo disorder	S	DC-PI-01	2020-01-01	2099-12-31	
+77	demo medication pi	Drug	DEMODRUG	demo drug product	S	DD-PI-01	2020-01-01	2099-12-31	
+78	demo procedure pi	Procedure	DEMOPROC	demo procedure	S	DP-PI-01	2020-01-01	2099-12-31	
+79	demo lab test pi	Measurement	DEMOLAB	demo lab test	S	DL-PI-01	2020-01-01	2099-12-31	
+80	demo finding pi	Observation	DEMOVOCAB	demo finding	S	DO-PI-01	2020-01-01	2099-12-31	
+81	demo disorder rho	Condition	DEMOCOND	demo disorder	S	DC-RHO-01	2020-01-01	2023-12-31	D
+82	demo medication rho	Drug	DEMODRUG	demo drug product	S	DD-RHO-01	2020-01-01	2099-12-31	
+83	demo procedure rho	Procedure	DEMOPROC	demo procedure	S	DP-RHO-01	2020-01-01	2099-12-31	
+84	demo lab test rho	Measurement	DEMOLAB	demo lab test	S	DL-RHO-01	2020-01-01	2099-12-31	
+85	demo finding rho	Observation	DEMOVOCAB	demo finding	S	DO-RHO-01	2020-01-01	2099-12-31	
+86	demo disorder sigma	Condition	DEMOCOND	demo disorder	S	DC-SIGM-01	2020-01-01	2099-12-31	
+87	demo medication sigma	Drug	DEMODRUG	demo drug product	S	DD-SIGM-01	2020-01-01	2099-12-31	
+88	demo procedure sigma	Procedure	DEMOPROC	demo procedure	S	DP-SIGM-01	2020-01-01	2023-12-31	D
+89	demo lab test sigma	Measurement	DEMOLAB	demo lab test	S	DL-SIGM-01	2020-01-01	2099-12-31	
+90	demo finding sigma	Observation	DEMOVOCAB	demo finding	S	DO-SIGM-01	2020-01-01	2099-12-31	
+91	demo disorder tau	Condition	DEMOCOND	demo disorder	S	DC-TAU-01	2020-01-01	2099-12-31	
+92	demo medication tau	Drug	DEMODRUG	demo drug product	S	DD-TAU-01	2020-01-01	2099-12-31	
+93	demo procedure tau	Procedure	DEMOPROC	demo procedure	S	DP-TAU-01	2020-01-01	2099-12-31	
+94	demo lab test tau	Measurement	DEMOLAB	demo lab test	S	DL-TAU-01	2020-01-01	2099-12-31	
+95	demo finding tau	Observation	DEMOVOCAB	demo finding	S	DO-TAU-01	2020-01-01	2023-12-31	D
+96	demo disorder upsilon	Condition	DEMOCOND	demo disorder	S	DC-UPSI-01	2020-01-01	2099-12-31	
+97	demo medication upsilon	Drug	DEMODRUG	demo drug product	S	DD-UPSI-01	2020-01-01	2099-12-31	
+98	demo procedure upsilon	Procedure	DEMOPROC	demo procedure	S	DP-UPSI-01	2020-01-01	2099-12-31	
+99	demo lab test upsilon	Measurement	DEMOLAB	demo lab test	S	DL-UPSI-01	2020-01-01	2099-12-31	
+100	demo finding upsilon	Observation	DEMOVOCAB	demo finding	S	DO-UPSI-01	2020-01-01	2099-12-31	
+101	demo disorder alpha acute demo phase	Condition	DEMOCOND	demo disorder	S	DC-ALPH-02	2020-01-01	2099-12-31	
+102	demo disorder alpha chronic demo phase	Condition	DEMOCOND	demo disorder	C	DC-ALPH-03	2020-01-01	2023-12-31	D
+103	demo disorder alpha severity index	Condition	DEMOCOND	demo disorder		DC-ALPH-04	2020-01-01	2099-12-31	
+104	demo lab test beta acute demo phase	Measurement	DEMOLAB	demo lab test	S	DL-BETA-02	2020-01-01	2099-12-31	
+105	demo lab test beta chronic demo phase	Measurement	DEMOLAB	demo lab test	C	DL-BETA-03	2020-01-01	2099-12-31	
+106	demo lab test beta severity index	Measurement	DEMOLAB	demo lab test		DL-BETA-04	2020-01-01	2099-12-31	
+107	demo procedure gamma acute demo phase	Procedure	DEMOPROC	demo procedure	S	DP-GAMM-02	2020-01-01	2099-12-31	
+108	demo procedure gamma chronic demo phase	Procedure	DEMOPROC	demo procedure	C	DP-GAMM-03	2020-01-01	2099-12-31	
+109	demo procedure gamma severity index	Procedure	DEMOPROC	demo procedure		DP-GAMM-04	2020-01-01	2023-12-31	D
+110	demo finding delta acute demo phase	Observation	DEMOVOCAB	demo finding	S	DO-DELT-02	2020-01-01	2099-12-31	
+111	demo finding delta chronic demo phase	Observation	DEMOVOCAB	demo finding	C	DO-DELT-03	2020-01-01	2099-12-31	
+112	demo finding delta severity index	Observation	DEMOVOCAB	demo finding		DO-DELT-04	2020-01-01	2099-12-31	
+113	demo disorder epsilon acute demo phase	Condition	DEMOCOND	demo disorder	S	DC-EPSI-02	2020-01-01	2099-12-31	
+114	demo disorder epsilon chronic demo phase	Condition	DEMOCOND	demo disorder	C	DC-EPSI-03	2020-01-01	2099-12-31	
+115	demo disorder epsilon severity index	Condition	DEMOCOND	demo disorder		DC-EPSI-04	2020-01-01	2099-12-31	
+116	demo lab test zeta acute demo phase	Measurement	DEMOLAB	demo lab test	S	DL-ZETA-02	2020-01-01	2023-12-31	D
+117	demo lab test zeta chronic demo phase	Measurement	DEMOLAB	demo lab test	C	DL-ZETA-03	2020-01-01	2099-12-31	
+118	demo lab test zeta severity index	Measurement	DEMOLAB	demo lab test		DL-ZETA-04	2020-01-01	2099-12-31	
+119	demo procedure eta acute demo phase	Procedure	DEMOPROC	demo procedure	S	DP-ETA-02	2020-01-01	2099-12-31	
+120	demo procedure eta chronic demo phase	Procedure	DEMOPROC	demo procedure	C	DP-ETA-03	2020-01-01	2099-12-31	
+121	demo procedure eta severity index	Procedure	DEMOPROC	demo procedure		DP-ETA-04	2020-01-01	2099-12-31	
+122	demo finding theta acute demo phase	Observation	DEMOVOCAB	demo finding	S	DO-THET-02	2020-01-01	2099-12-31	
+123	demo finding theta chronic demo phase	Observation	DEMOVOCAB	demo finding	C	DO-THET-03	2020-01-01	2023-12-31	D
+124	demo finding theta severity index	Observation	DEMOVOCAB	demo finding		DO-THET-04	2020-01-01	2099-12-31	
+125	demo disorder iota acute demo phase	Condition	DEMOCOND	demo disorder	S	DC-IOTA-02	2020-01-01	2099-12-31	
+126	demo disorder iota chronic demo phase	Condition	DEMOCOND	demo disorder	C	DC-IOTA-03	2020-01-01	2099-12-31	
+127	demo disorder iota severity index	Condition	DEMOCOND	demo disorder		DC-IOTA-04	2020-01-01	2099-12-31	
+128	demo lab test kappa acute demo phase	Measurement	DEMOLAB	demo lab test	S	DL-KAPP-02	2020-01-01	2099-12-31	
+129	demo lab test kappa chronic demo phase	Measurement	DEMOLAB	demo lab test	C	DL-KAPP-03	2020-01-01	2099-12-31	
+130	demo lab test kappa severity index	Measurement	DEMOLAB	demo lab test		DL-KAPP-04	2020-01-01	2023-12-31	D
+131	demo procedure lambda acute demo phase	Procedure	DEMOPROC	demo procedure	S	DP-LAMB-02	2020-01-01	2099-12-31	
+132	demo procedure lambda chronic demo phase	Procedure	DEMOPROC	demo procedure	C	DP-LAMB-03	2020-01-01	2099-12-31	
+133	demo procedure lambda severity index	Procedure	DEMOPROC	demo procedure		DP-LAMB-04	2020-01-01	2099-12-31	
+134	demo finding mu acute demo phase	Observation	DEMOVOCAB	demo finding	S	DO-MU-02	2020-01-01	2099-12-31	
+135	demo finding mu chronic demo phase	Observation	DEMOVOCAB	demo finding	C	DO-MU-03	2020-01-01	2099-12-31	
+136	demo finding mu severity index	Observation	DEMOVOCAB	demo finding		DO-MU-04	2020-01-01	2099-12-31	
+137	demo disorder nu acute demo phase	Condition	DEMOCOND	demo disorder	S	DC-NU-02	2020-01-01	2023-12-31	D
+138	demo disorder nu chronic demo phase	Condition	DEMOCOND	demo disorder	C	DC-NU-03	2020-01-01	2099-12-31	
+139	demo disorder nu severity index	Condition	DEMOCOND	demo disorder		DC-NU-04	2020-01-01	2099-12-31	
+140	demo lab test xi acute demo phase	Measurement	DEMOLAB	demo lab test	S	DL-XI-02	2020-01-01	2099-12-31	
+141	demo lab test xi chronic demo phase	Measurement	DEMOLAB	demo lab test	C	DL-XI-03	2020-01-01	2099-12-31	
+142	demo lab test xi severity index	Measurement	DEMOLAB	demo lab test		DL-XI-04	2020-01-01	2099-12-31	
+143	demo procedure omicron acute demo phase	Procedure	DEMOPROC	demo procedure	S	DP-OMIC-02	2020-01-01	2099-12-31	
+144	demo procedure omicron chronic demo phase	Procedure	DEMOPROC	demo procedure	C	DP-OMIC-03	2020-01-01	2023-12-31	D
+145	demo procedure omicron severity index	Procedure	DEMOPROC	demo procedure		DP-OMIC-04	2020-01-01	2099-12-31	
+146	demo finding pi acute demo phase	Observation	DEMOVOCAB	demo finding	S	DO-PI-02	2020-01-01	2099-12-31	
+147	demo finding pi chronic demo phase	Observation	DEMOVOCAB	demo finding	C	DO-PI-03	2020-01-01	2099-12-31	
+148	demo finding pi severity index	Observation	DEMOVOCAB	demo finding		DO-PI-04	2020-01-01	2099-12-31	
+149	demo disorder rho acute demo phase	Condition	DEMOCOND	demo disorder	S	DC-RHO-02	2020-01-01	2099-12-31	
+150	demo disorder rho chronic demo phase	Condition	DEMOCOND	demo disorder	C	DC-RHO-03	2020-01-01	2099-12-31	
+151	demo disorder rho severity index	Condition	DEMOCOND	demo disorder		DC-RHO-04	2020-01-01	2023-12-31	D
+152	demo lab test sigma acute demo phase	Measurement	DEMOLAB	demo lab test	S	DL-SIGM-02	2020-01-01	2099-12-31	
+153	demo lab test sigma chronic demo phase	Measurement	DEMOLAB	demo lab test	C	DL-SIGM-03	2020-01-01	2099-12-31	
+154	demo lab test sigma severity index	Measurement	DEMOLAB	demo lab test		DL-SIGM-04	2020-01-01	2099-12-31	
+155	demo procedure tau acute demo phase	Procedure	DEMOPROC	demo procedure	S	DP-TAU-02	2020-01-01	2099-12-31	
+156	demo procedure tau chronic demo phase	Procedure	DEMOPROC	demo procedure	C	DP-TAU-03	2020-01-01	2099-12-31	
+157	demo procedure tau severity index	Procedure	DEMOPROC	demo procedure		DP-TAU-04	2020-01-01	2099-12-31	
+158	demo finding upsilon acute demo phase	Observation	DEMOVOCAB	demo finding	S	DO-UPSI-02	2020-01-01	2023-12-31	D
+159	demo finding upsilon chronic demo phase	Observation	DEMOVOCAB	demo finding	C	DO-UPSI-03	2020-01-01	2099-12-31	
+160	demo finding upsilon severity index	Observation	DEMOVOCAB	demo finding		DO-UPSI-04	2020-01-01	2099-12-31	
+161	demo procedure alpha acute demo phase extended	Procedure	DEMOPROC	demo procedure		DP-ALPH-05	2020-01-01	2099-12-31	
+162	demo finding beta chronic demo phase extended	Observation	DEMOVOCAB	demo finding	C	DO-BETA-05	2020-01-01	2099-12-31	
+163	demo disorder gamma severity index extended	Condition	DEMOCOND	demo disorder		DC-GAMM-05	2020-01-01	2099-12-31	
+164	demo lab test delta acute demo phase extended	Measurement	DEMOLAB	demo lab test		DL-DELT-05	2020-01-01	2099-12-31	
+165	demo procedure epsilon chronic demo phase extended	Procedure	DEMOPROC	demo procedure	C	DP-EPSI-05	2020-01-01	2023-12-31	D
+166	demo finding zeta severity index extended	Observation	DEMOVOCAB	demo finding		DO-ZETA-05	2020-01-01	2099-12-31	
+167	demo disorder eta acute demo phase extended	Condition	DEMOCOND	demo disorder		DC-ETA-05	2020-01-01	2099-12-31	
+168	demo lab test theta chronic demo phase extended	Measurement	DEMOLAB	demo lab test	C	DL-THET-05	2020-01-01	2099-12-31	
+169	demo procedure iota severity index extended	Procedure	DEMOPROC	demo procedure		DP-IOTA-05	2020-01-01	2099-12-31	
+170	demo finding kappa acute demo phase extended	Observation	DEMOVOCAB	demo finding		DO-KAPP-05	2020-01-01	2099-12-31	
+171	demo disorder lambda chronic demo phase extended	Condition	DEMOCOND	demo disorder	C	DC-LAMB-05	2020-01-01	2099-12-31	
+172	demo lab test mu severity index extended	Measurement	DEMOLAB	demo lab test		DL-MU-05	2020-01-01	2023-12-31	D
+173	demo procedure nu acute demo phase extended	Procedure	DEMOPROC	demo procedure		DP-NU-05	2020-01-01	2099-12-31	
+174	demo finding xi chronic demo phase extended	Observation	DEMOVOCAB	demo finding	C	DO-XI-05	2020-01-01	2099-12-31	
+175	demo disorder omicron severity index extended	Condition	DEMOCOND	demo disorder		DC-OMIC-05	2020-01-01	2099-12-31	
+176	demo lab test pi acute demo phase extended	Measurement	DEMOLAB	demo lab test		DL-PI-05	2020-01-01	2099-12-31	
+177	demo procedure rho chronic demo phase extended	Procedure	DEMOPROC	demo procedure	C	DP-RHO-05	2020-01-01	2099-12-31	
+178	demo finding sigma severity index extended	Observation	DEMOVOCAB	demo finding		DO-SIGM-05	2020-01-01	2099-12-31	
+179	demo disorder tau acute demo phase extended	Condition	DEMOCOND	demo disorder		DC-TAU-05	2020-01-01	2023-12-31	D
+180	demo lab test upsilon chronic demo phase extended	Measurement	DEMOLAB	demo lab test	C	DL-UPSI-05	2020-01-01	2099-12-31	
+181	demo snomed finding alpha	Condition	SNOMED	demo disorder	S	900000001	2020-01-01	2099-12-31	
+182	demo snomed procedure beta	Procedure	SNOMED	demo procedure	S	900000002	2020-01-01	2099-12-31	
+183	demo loinc measurement gamma	Measurement	LOINC	demo lab test	S	90000-1	2020-01-01	2099-12-31	
+184	demo rxnorm drug delta	Drug	RxNorm	demo drug product	S	9000001	2020-01-01	2099-12-31	
+185	demo unit millidemo	Unit	DEMOVOCAB	demo unit	S	DEMO-U-01	2020-01-01	2099-12-31	
+186	demo unit kilodemo	Unit	DEMOVOCAB	demo unit	S	DEMO-U-02	2020-01-01	2023-12-31	D
+187	demo unit microdemo	Unit	DEMOVOCAB	demo unit		DEMO-U-03	2020-01-01	2099-12-31	
+188	demo value low	Meas Value	DEMOVOCAB	demo value	S	DEMO-V-01	2020-01-01	2099-12-31	
+189	demo value high	Meas Value	DEMOVOCAB	demo value	S	DEMO-V-02	2020-01-01	2099-12-31	
+190	demo value borderline	Meas Value	DEMOVOCAB	demo value	C	DEMO-V-03	2020-01-01	2099-12-31	
+191	demo type concept inpatient	Type Concept	DEMOVOCAB	demo type	S	DEMO-T-01	2020-01-01	2099-12-31	
+192	demo type concept outpatient	Type Concept	DEMOVOCAB	demo type	S	DEMO-T-02	2020-01-01	2099-12-31	
+193	demo provider role primary	Metadata	DEMOVOCAB	demo metadata	S	DEMO-M-01	2020-01-01	2023-12-31	D
+194	demo provider role secondary	Metadata	DEMOVOCAB	demo metadata		DEMO-M-02	2020-01-01	2099-12-31	
+195	demo observation type qualifier	Metadata	DEMOVOCAB	demo metadata	C	DEMO-M-03	2020-01-01	2099-12-31	
+196	demo special form standard	Metadata	DEMOVOCAB	demo metadata	S	DEMO-M-04	2020-01-01	2099-12-31	
+197	demo special form extended	Metadata	DEMOVOCAB	demo metadata	S	DEMO-M-05	2020-01-01	2099-12-31	
+198	demo special form legacy	Metadata	DEMOVOCAB	demo metadata		DEMO-M-06	2020-01-01	2099-12-31	
+199	demo relationship primary	Metadata	DEMOVOCAB	demo metadata	S	DEMO-M-07	2020-01-01	2099-12-31	
+200	demo relationship secondary	Metadata	DEMOVOCAB	demo metadata	C	DEMO-M-08	2020-01-01	2023-12-31	D

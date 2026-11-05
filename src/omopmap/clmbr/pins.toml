@@ -1,0 +1,18 @@
+# Pin of the CLMBR-T-Base dictionary.
+#
+# Every import checks the dictionary file's SHA-256 against `sha256` below and
+# stops (exit 2) on any difference; both acquisition routes (the pinned
+# Hugging Face revision and a local `--model-dir` copy of the same file) check
+# the identical values. The derived concept set is checked against
+# `concept_list_sha256` as a second, content-level pin.
+#
+# The model is gated: the hf route needs HF_TOKEN in the environment, set after
+# accepting the model's access terms.
+
+schema_version = 1
+repo = "StanfordShahLab/clmbr-t-base"
+licence = "Gated release under the EHRSHOT Credentialed Health Data License; model card: CC-BY-NC-4.0; bundled LICENSE file: CC BY-NC-SA 4.0"
+filename = "dictionary.msgpack"
+revision = "a0f2b36ef3976faf032bfbce23030cb640b5e97f"
+sha256 = "481ddac70a37e79bbfadde1411ad674544a161e3c1948149989cd159a34203ee"
+concept_list_sha256 = "71f396167f40096c9ff11dc1b762746e946a7ddaec195f11a813a341bffedbc1"

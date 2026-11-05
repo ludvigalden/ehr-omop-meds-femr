@@ -1,0 +1,166 @@
+// Schema of the vocabulary KDL tree (KDL 2): the `module.kdl` root and the
+// generated concept documents under its subtrees.
+//
+// `module.kdl` (profile `module`, selected by file name) names this schema and
+// each subtree: the command that produces it, its committed manifest, and the
+// glob of its generated documents. Every other document (profile
+// `concept-document`, the default) is a concept document.
+//
+// One concept document per vocabulary, named `<vocabulary_id>.kdl`. The first node is
+// `context`; every other node is a `concept`. A concept's full code string is
+// `<system>/<concept code>`, the MEDS code format. Documents carry codes and
+// structural facts only: no designations, names, weights or statistics.
+//
+// Invented example (no real vocabulary content):
+//
+//   context {
+//       system "DEMOCOND"
+//       source "demo-org/demo-model"
+//       revision "0123456789abcdef0123456789abcdef01234567"
+//       dictionary-sha256 "<64 hex digits>"
+//   }
+//   concept "C001" {
+//       clmbr-entry-types "code"
+//       omop-concept-id 2000000001 domain="Condition" standard="S"
+//   }
+schema omopmap-vocab version="1" {
+    types {
+        string Sha256 {
+            pattern #"^[0-9a-f]{64}$"#
+        }
+
+        string Revision {
+            pattern #"^[0-9a-f]{40}$"#
+        }
+
+        string NonEmpty {
+            min-length 1
+        }
+
+        // Dictionary entry types a code appears under; `unused` entries are
+        // excluded from the concept set.
+        enum EntryType {
+            member code
+            member numeric
+            member text
+        }
+
+        // Where the dictionary came from: one per document.
+        object Context {
+            field system NonEmpty description="Vocabulary id; equals the file name stem."
+            field source NonEmpty description="Model release the dictionary comes from."
+            field revision Revision description="Pinned commit of that release."
+            field dictionary-sha256 Sha256 description="SHA-256 of the dictionary file."
+            field athena-concept-sha256 "optional<Sha256>" description="SHA-256 of the Athena CONCEPT table used for enrichment."
+        }
+
+        // OMOP facts from an Athena CONCEPT table, present only when enriched.
+        object OmopConcept {
+            field concept-id Integer description="OMOP concept_id."
+            field domain NonEmpty description="OMOP domain_id."
+            field standard "optional<String>" description="OMOP standard_concept."
+        }
+
+        // The tree root: the schema its documents follow and its subtrees.
+        object Module {
+            field name NonEmpty description="Module name."
+            field version String description="Module layout version."
+            field schema NonEmpty description="Schema file, relative to module.kdl."
+            field subtrees "list<Subtree>"
+        }
+
+        // One generated subtree.
+        object Subtree {
+            field name NonEmpty description="Directory name, relative to module.kdl."
+            field producer NonEmpty description="Command that writes the subtree."
+            field manifest NonEmpty description="Committed manifest of counts and hashes."
+            field documents Documents
+        }
+
+        // The generated documents of a subtree.
+        object Documents {
+            field pattern NonEmpty description="Glob of the documents, relative to module.kdl."
+            field committed Bool description="Whether the documents are version-controlled."
+        }
+
+        // One distinct concept of the vocabulary.
+        object Concept {
+            field code NonEmpty description="Concept code within the vocabulary."
+            field entry-types "list<EntryType>" description="Dictionary entry types, in this order."
+            field omop "optional<OmopConcept>"
+        }
+    }
+
+    node context role=record type=Context {
+        field system child=system
+        field source child=source
+        field revision child=revision
+        field dictionary-sha256 child=dictionary-sha256
+        field athena-concept-sha256 child=athena-concept-sha256
+    }
+
+    node concept role=record type=Concept {
+        field code arg=0
+        field entry-types {
+            from {
+                child clmbr-entry-types {
+                    args
+                }
+            }
+        }
+        field omop child=omop-concept-id
+    }
+
+    node omop-concept-id type=OmopConcept parent=concept {
+        field concept-id arg=0
+        field domain property=domain
+        field standard property=standard
+    }
+
+    node module role=record type=Module {
+        field name arg=0
+        field version property=version
+        field schema child=schema
+        field subtrees {
+            from {
+                children subtree
+            }
+        }
+        children subtree min-occurs=1
+    }
+
+    node subtree type=Subtree parent=module {
+        field name arg=0
+        field producer child=producer
+        field manifest child=manifest
+        field documents child=documents
+    }
+
+    node documents type=Documents parent=subtree {
+        field pattern arg=0
+        field committed property=committed
+    }
+
+    profile module {
+        roots {
+            allow Module
+        }
+        match {
+            file-name "module.kdl"
+        }
+    }
+
+    profile concept-document default=#true {
+        roots {
+            allow Context
+            allow Concept
+        }
+    }
+
+    document {
+        first {
+            exactly-one context module
+        }
+        following concept
+    }
+}

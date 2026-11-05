@@ -1,0 +1,61 @@
+source_term	concept_id	split
+smärta i bröstet	5	train
+bröstsmärta vid ansträngning	10	train
+feber	1	train
+huvudvärk	11	train
+ont i magen	16	dev
+kräkningar	21	train
+yrhet	26	heldout
+andnöd	31	train
+hjärtklappning	40	train
+hosta	41	dev
+svullnad i benen	50	train
+utslag på armen	55	train
+ryggsmärta	61	train
+ledvärk	66	heldout
+muskelsmärtor	71	dev
+trötthet	76	train
+viktminskning	85	train
+frossa	86	train
+svettningar på natten	95	train
+kval i magen	96	dev
+halsont	6	heldout
+öronvärk	11	train
+tandvärk	16	train
+dimsyn	21	train
+domningar i handen	30	dev
+kramper i vaden	31	train
+blodtryck	4	train
+blodsocker	9	heldout
+puls	14	train
+kroppstemperatur	19	dev
+syresättning	24	train
+hemoglobin	29	train
+tvättkälla	34	train
+blodprov	3	train
+röntgen	8	heldout
+datortomografi	13	train
+ekokardiografi	18	train
+elektrokardiogram	23	train
+demovärk i armen	5	train
+kvidfeber	1	dev
+stelbleka i nacken	36	train
+lufsfeber med frossa	41	heldout
+vindkramper	46	train
+provvärk vid belastning	51	train
+skuggvärk i bröstet	60	dev
+blekhosta på natten	61	train
+kylsvett	70	train
+rytmvind i bröstet	75	train
+stelvind	76	heldout
+kvidandning	81	dev
+skrivarvärk i handen	90	train
+lufsande andning	95	train
+blekhet	100	train
+vindfeber	1	train
+kvidpuls	14	dev
+luftpuls i handleden	19	heldout
+provsvett	25	train
+stelvärk i axeln	40	train
+kvidsmärta i benet	26	train
+lufsvärk i bröstet	10	dev

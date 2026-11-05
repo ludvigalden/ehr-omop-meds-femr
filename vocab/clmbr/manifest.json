@@ -1,0 +1,38 @@
+{
+  "care_site_excluded": 396,
+  "concept_list_sha256": "71f396167f40096c9ff11dc1b762746e946a7ddaec195f11a813a341bffedbc1",
+  "contract_version": "1.0.0",
+  "entry_type_counts": {
+    "code": 25667,
+    "numeric": 11183,
+    "text": 2961,
+    "unused": 25725
+  },
+  "file_sha256": "481ddac70a37e79bbfadde1411ad674544a161e3c1948149989cd159a34203ee",
+  "filename": "dictionary.msgpack",
+  "revision": "a0f2b36ef3976faf032bfbce23030cb640b5e97f",
+  "source_repo": "StanfordShahLab/clmbr-t-base",
+  "total": 25749,
+  "vocabulary_counts": {
+    "CMS Place of Service": 2,
+    "CPT4": 3647,
+    "CVX": 41,
+    "Cancer Modifier": 19,
+    "Condition Type": 1,
+    "Domain": 1,
+    "Ethnicity": 2,
+    "Gender": 2,
+    "HCPCS": 54,
+    "ICD10PCS": 233,
+    "ICD9Proc": 196,
+    "ICDO3": 52,
+    "LOINC": 4394,
+    "Medicare Specialty": 1,
+    "OMOP Extension": 3,
+    "Race": 5,
+    "RxNorm": 4678,
+    "RxNorm Extension": 255,
+    "SNOMED": 12157,
+    "Visit": 6
+  }
+}

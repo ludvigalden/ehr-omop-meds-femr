@@ -1,0 +1,13 @@
+// Root of the vocabulary KDL tree.
+//
+// The tree holds generated concept documents. Each subtree is produced by one
+// command, carries a committed manifest of counts and hashes, and keeps its
+// generated `*.kdl` files out of version control. Documents follow schema.kdl.
+module "omopmap.vocab" version="1" {
+    schema "schema.kdl"
+    subtree "clmbr" {
+        producer "omopmap clmbr import"
+        manifest "clmbr/manifest.json"
+        documents "clmbr/*.kdl" committed=#false
+    }
+}
