@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+title: ehr-omop-meds-femr
+repository-code: https://github.com/ludvigalden/ehr-omop-meds-femr
+authors:
+  - given-names: Ludvig
+    family-names: Aldén
+  - given-names: Gabriel
+    family-names: Gabro
+license: Apache-2.0

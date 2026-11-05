@@ -1,0 +1,77 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "omopmap"
+version = "0.1.0"
+description = "Map Swedish clinical source terms to OMOP standard concepts and build model-ready artifacts for CLMBR."
+requires-python = ">=3.12,<3.13"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [
+    { name = "Ludvig Aldén" },
+    { name = "Gabriel Gabro" },
+]
+dependencies = [
+    "polars",
+    "numpy",
+    "pyarrow",
+    "msgpack",
+    "scipy",
+    "typer",
+    "pydantic>=2",
+]
+
+[project.optional-dependencies]
+embed = [
+    "torch",
+    "sentence-transformers",
+    "transformers",
+]
+hf = [
+    "huggingface_hub",
+]
+dev = [
+    "pytest",
+    "ruff",
+    "basedpyright",
+    "ckdl",
+    "pyarrow-stubs",
+    "scipy-stubs",
+]
+
+[project.scripts]
+omopmap = "omopmap.cli:app"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = false
+
+[tool.basedpyright]
+typeCheckingMode = "strict"
+include = ["src", "tests"]
+pythonVersion = "3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "real_model: needs a local CLMBR checkpoint directory in OMOPMAP_CLMBR_DIR",
+]
+
+# CPU-only torch on Linux, so a plain sync never pulls the CUDA stack. GPU
+# hosts swap in the CUDA build of the same version (jobs/runpod/setup.sh).
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
