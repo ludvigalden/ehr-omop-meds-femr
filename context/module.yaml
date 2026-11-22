@@ -1,0 +1,11 @@
+title: ehr-omop-meds-femr
+description: >-
+  Design and reference notes for ehr-omop-meds-femr: mapping Swedish
+  clinical source terms onto OMOP standard concepts, the MEDS/FEMR
+  artifact contract a CLMBR continued-pretraining pipeline consumes,
+  the CLMBR concept-set importer and coverage instrument, the
+  retrieval, fine-tuning, adjudication and statistics methods, and the
+  repository's own conventions.
+path: github.com/ludvigalden/ehr-omop-meds-femr
+name: ehr_omop_meds_femr
+requires: []

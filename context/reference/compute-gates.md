@@ -57,12 +57,12 @@ omopmap gate --concepts CONCEPT.csv --queries terms.tsv --out runs/gate \
 ## The gate as a job step
 
 The rented-GPU job folder wires the gate in as an explicit step:
-[jobs/runpod/run_all.sh](../../jobs/runpod/run_all.sh) runs it after the
+[jobs/runpod/run_all.sh](https://github.com/ludvigalden/ehr-omop-meds-femr/blob/main/jobs/runpod/run_all.sh) runs it after the
 dictionary build and before any bulk embedding, and stops the whole job when
 it exits 3, leaving the projection and the stop file on disk to copy back.
 The folder's operational runbook — setup, environment-variable inputs, cost
 and wall-time checks before renting, what to copy back, and teardown — is
-[jobs/runpod/RUNBOOK.md](../../jobs/runpod/RUNBOOK.md).
+[jobs/runpod/RUNBOOK.md](https://github.com/ludvigalden/ehr-omop-meds-femr/blob/main/jobs/runpod/RUNBOOK.md).
 
 ## The source runbook's numbers
 
